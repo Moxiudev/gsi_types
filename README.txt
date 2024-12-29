@@ -1,21 +1,49 @@
-Information about what type of GSI it is
+GSI Naming Standard (2024)
 
+Format:
 <ARCH>_xyZ
 
-<ARCH> can either be arm, a64 or arm64
-x can either be a or b
-y can either be v, o, g or f
-Z can be N or S
+Components:
+1. <ARCH> (Architecture)
+   - arm   : ARM 32-bit
+   - a64   : ARM 32-bit with 64-bit binder
+   - arm64 : ARM 64-bit
 
-b = a/b
-a = a-only
+2. x (Partition Type)
+   - a : A-only
+   - b : A/B
 
-g = gapps
-o = gapps-go
-v = vanilla (no gapps included)
-f = floss (free & open source apps instead gapps)
+3. y (Build Variant)
+   - v : Vanilla (no Google Apps or proprietary apps)
+   - o : GApps Go (lightweight Google Apps)
+   - g : GApps (standard Google Apps)
+   - f : FLOSS (Free/Libre Open Source Software)
 
-N = no superuser
-S = superuser included
+4. Z (Superuser Inclusion)
+   - N : No superuser (non-rooted)
+   - S : Superuser included (rooted)
 
-so in most common example "arm64_avN" is ARM64 A-only vanilla with no superuser
+Examples:
+1. arm64_avN
+   - Architecture: ARM64
+   - Partition Type: A-only
+   - Build Variant: Vanilla (no GApps)
+   - Superuser: No superuser
+
+2. arm_bfS
+   - Architecture: ARM 32-bit
+   - Partition Type: A/B
+   - Build Variant: FLOSS (open-source apps)
+   - Superuser: Included
+
+3. a64_ogN
+   - Architecture: ARM 32-bit with 64-bit binder
+   - Partition Type: A-only
+   - Build Variant: GApps Go
+   - Superuser: No superuser
+
+4. arm64_bgS
+   - Architecture: ARM64
+   - Partition Type: A/B
+   - Build Variant: GApps (standard)
+   - Superuser: Included
