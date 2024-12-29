@@ -17,7 +17,7 @@ Components:
    - v : Vanilla (no Google Apps or proprietary apps)
    - o : GApps Go (lightweight Google Apps)
    - g : GApps (standard Google Apps)
-   - f : FLOSS (Free/Libre Open Source Software)
+   - f : FLOSS (Free and open source apps included)
 
 4. Z (Superuser Inclusion)
    - N : No superuser (non-rooted)
