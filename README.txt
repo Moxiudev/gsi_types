@@ -1,4 +1,5 @@
-GSI Naming Standard (2024)
+GSI Naming: 
+(Last Updated on: 20241229)
 
 Format:
 <ARCH>_xyZ
