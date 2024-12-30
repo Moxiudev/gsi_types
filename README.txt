@@ -1,5 +1,5 @@
 GSI Naming: 
-(Last Updated on: 20241229)
+(Last Updated on: 20241230)
 
 Format:
 <ARCH>_xyZ
@@ -48,3 +48,9 @@ Examples:
    - Partition Type: A/B
    - Build Variant: GApps (standard)
    - Superuser: Included
+
+5. arm64_bgN
+   - Architecture: ARM64
+   - Partition Type: A/B
+   - Build Variant: GApps (standard)
+   - Superuser: Not Included
